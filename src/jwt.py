@@ -1,3 +1,7 @@
+"""
+This module contains utilities for working with JSON Web Tokens
+"""
+
 from enum import StrEnum
 from typing import TypedDict, TypeGuard
 

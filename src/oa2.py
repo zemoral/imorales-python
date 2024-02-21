@@ -1,3 +1,11 @@
+"""
+This module contains common utilities for working with OAuth 2.0
+
+Sources:
+- RFC 6749 OAuth 2.0 Authorization Framework
+- RFC 8693 OAuth 2.0 Token Exchange
+"""
+
 from enum import StrEnum
 
 

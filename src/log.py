@@ -1,3 +1,7 @@
+"""
+This module contains common logging operations & utilities
+"""
+
 from logging import (
     CRITICAL,
     DEBUG,

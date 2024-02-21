@@ -1,2 +1,3 @@
-from requests import get
-
+"""
+This module contains network operations & utilities
+"""
