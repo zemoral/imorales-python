@@ -1,16 +1,27 @@
 """
-This module contains utilities for working with JSON Web Tokens
+This module contains utilities for working with JSON Web Tokens & OAuth 2.0
+
+Sources:
+- RFC 6749 OAuth 2.0 Authorization Framework
+- RFC 8693 OAuth 2.0 Token Exchange
 """
 
 from enum import StrEnum
 from typing import TypedDict, TypeGuard
 
-from src.oa2 import OAuth2Field
 
-ClaimSet = StrEnum
+class OAuth2Field(StrEnum):
+    Act = "act"
+    """indicates the current party acting on behalf of the original party"""
+    Scope = "scope"
+    """indicates the permissions granted to the application"""
+    MayAct = "may_act"
+    """defines whether the bearer may act on behalf of another"""
+    ClientId = "client_id"
+    """client identifier making the requests"""
 
 
-class JwtClaim(ClaimSet):
+class JwtClaim(StrEnum):
     Issuer = "iss"
     Subject = "sub"
     Audience = "aud"
